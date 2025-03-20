@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2025!</title>
+  <style>
+    /* Basic page styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      background-color: #1a1a1a; /* Dark background for contrast */
+    }
+
+    /* Styling for the New Year message */
+    .new-year-message {
+      font-size: 3em;
+      font-weight: bold;
+      color: #FFD700; /* Golden color for text */
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+      animation: sparkle 1.5s infinite alternate;
+    }
+
+    /* Animation for sparkle effect */
+    @keyframes sparkle {
+      0% { color: #FFD700; text-shadow: 3px 3px 5px rgba(255, 215, 0, 1); }
+      100% { color: #FF69B4; text-shadow: 3px 3px 10px rgba(255, 105, 180, 1); }
+    }
+
+    /* Fireworks animation */
+    .fireworks {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2em;
+      color: #FF6347;
+      animation: fireworks 2s infinite;
+    }
+
+    /* Fireworks burst animation */
+    @keyframes fireworks {
+      0% { opacity: 0; transform: translateX(-50%) scale(0); }
+      50% { opacity: 1; transform: translateX(-50%) scale(1.5); }
+      100% { opacity: 0; transform: translateX(-50%) scale(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- New Year message -->
+  <div class="new-year-message">
+    Happy New Year 2025!
+  </div>
+
+  <!-- Fireworks effect -->
+  <div class="fireworks">🎆🎇</div>
+</body>
+</html>
